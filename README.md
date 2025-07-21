@@ -6,7 +6,8 @@ Visualizations created in the project:
 ## https://public.tableau.com/app/profile/carden.cooper/vizzes
 Table Of Contents for the project:
 ## https://1drv.ms/w/c/15c24f8c1fc26cd8/EZsiUlu4WWVGhWYw6mmfT1QBZqX34t9zyd8s1BkF5PGFGw?e=VHrcCG
-Introduction
+
+### Introduction
 Rockbuster Stealth LLC is a movie rental company that used to have stores around the
 world. Facing stiff competition from streaming services such as Netflix and Amazon Prime,
 the Rockbuster Stealth management team is planning to use its existing movie licenses to
