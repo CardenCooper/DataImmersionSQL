@@ -9,7 +9,7 @@ GROUP BY country
 ORDER BY COUNT(customer_id) DESC
 LIMIT 10
 
-### Code for the cities with the msot custuomers within those top 10 countries.
+### Code for the cities with the most customers within those top 10 countries.
 SELECT city, country,
 COUNT (customer_id) AS customer_count
 FROM customer
