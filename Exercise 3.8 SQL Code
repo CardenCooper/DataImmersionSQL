@@ -1,4 +1,4 @@
-### Code 1
+### Code for finding the average amount paid for the top 5 customers
 SELECT AVG (total_payment) AS average_amount_paid FROM (SELECT
 customer.customer_id, first_name, last_name, country, city, SUM (payment.amount) AS
 total_payment FROM customer INNER JOIN payment ON customer.customer_id =
@@ -13,7 +13,7 @@ first_name, last_name, country, city
 ORDER BY total_payment DESC
 LIMIT 5)
 
-### Code 2
+### Code for finding the countries of the top 5 customers
 SELECT country.country, COUNT (DISTINCT customer.customer_id) AS
 all_customer_count, COUNT (DISTINCT top_5_customers.customer_id) AS
 top_5_customer_count FROM customer INNER JOIN address ON customer.address_id =
