@@ -1,4 +1,4 @@
-### Code 1
+### Rewritten code from Exercise 3.8 in CTE form
 WITH top_countries AS (SELECT countryA.country FROM customer AS customerA 
 INNER JOIN address AS addressA ON customerA.address_id = addressA.address_id 
 INNER JOIN city AS cityA ON addressA.city_id = cityA.city_id 
@@ -21,7 +21,7 @@ GROUP BY customerC.customer_id
 ORDER BY total_amount_paid DESC LIMIT 5) 
 SELECT AVG(total_amount_paid) AS average_amount_paid FROM top_customers
 
-### Code 2
+### Rewritten code from Exercise 3.8 in CTE form
 WITH top_countries AS 
 ( SELECT countryA.country FROM customer AS customerA 
 INNER JOIN address AS addressA ON customerA.address_id = addressA.address_id 
