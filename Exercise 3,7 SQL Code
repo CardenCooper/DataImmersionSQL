@@ -1,4 +1,4 @@
-### Code 1
+### Code for finding the top 10 countries with the most customers.
 SELECT country,
 COUNT(customer_id) AS customer_count
 FROM customer
@@ -9,7 +9,7 @@ GROUP BY country
 ORDER BY COUNT(customer_id) DESC
 LIMIT 10
 
-### Code 2
+### Code for the cities with the msot custuomers within those top 10 countries.
 SELECT city, country,
 COUNT (customer_id) AS customer_count
 FROM customer
@@ -22,7 +22,7 @@ GROUP BY city, country
 ORDER BY COUNT (customer_id) DESC
 LIMIT 10
 
-### Code 3
+### Code for finding the top 5 customers from within those top 10 cities.
 SELECT customer.customer_id, first_name, last_name, country, city,
 SUM (payment.amount) AS total_payment
 FROM customer
